@@ -357,6 +357,16 @@ fn admit_to_protocol_call_ledger(
 }
 
 #[cfg(test)]
+#[allow(clippy::unwrap_used)]
+#[allow(clippy::expect_used)]
+#[allow(clippy::indexing_slicing)]
+#[allow(clippy::panic)]
+#[allow(clippy::too_many_lines)]
+#[allow(clippy::float_cmp)]
+#[allow(clippy::cast_possible_truncation)]
+#[allow(clippy::cast_sign_loss)]
+#[allow(clippy::cast_possible_wrap)]
+#[allow(clippy::wildcard_imports)]
 mod tests {
     use super::*;
     use soroban_sdk::{vec, Address, Env};
