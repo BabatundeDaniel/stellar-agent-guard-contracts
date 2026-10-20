@@ -429,6 +429,7 @@ mod tests {
         }
     }
 
+    #[allow(clippy::too_many_arguments)]
     fn assert_matches_reference(
         ledger: &Ledger,
         reference: &ReferenceWindow,
@@ -473,6 +474,7 @@ mod tests {
         }
     }
 
+    #[allow(clippy::too_many_arguments)]
     fn run_reference_trace(
         env: &Env,
         seed: u64,
